@@ -28,7 +28,7 @@ public class BattleTextGame {
 				+ "\t\t3- the word should start with the first character in the last used word except for the first time.\n"
 				+ "\t\t4- player wins when he catch the max score or more.\n");
 
-		System.out.println("\t\t\t\t**********Game Started!!!**********\n\n");
+		System.out.println("\t\t\t\t**********Game Started!!!!**********\n\n");
 
 		List<String> lastUsedWords = new ArrayList<>();
 
