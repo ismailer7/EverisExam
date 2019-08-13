@@ -24,8 +24,6 @@ public class Loader {
 
 		} catch (IOException | URISyntaxException e) {
 			System.err.format("IOException: %s%n", e);
-		} finally {
-			br.close();
 		}
 	}
 
