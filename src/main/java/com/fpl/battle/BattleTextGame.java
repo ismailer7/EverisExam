@@ -30,7 +30,7 @@ public class BattleTextGame {
 
 		System.out.println("\t\t\t\t**********Game Started!!!!**********\n\n");
 
-		List<String> lastUsedWords = new ArrayList();
+		List<String> lastUsedWords = new ArrayList<>();
 
 		while (true) {
 			System.out.println("PLayer 1 (" + player1.getName() + ") Turn");
