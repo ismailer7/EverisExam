@@ -3,7 +3,7 @@ package com.fpl.entity;
 public class Player {
 
 	private String name;
-	
+	private String lastName;
 	private int score;
 
 	public Player(String name) {
