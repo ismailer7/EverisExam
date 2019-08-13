@@ -14,7 +14,7 @@ public class Loader {
 	
 	public Loader() {
 		BufferedReader br = null;
-		try (
+		try {
 			br = Files.newBufferedReader(Paths.get(getClass().getClassLoader().getResource("english.txt").toURI()));
 			// read line by line
 			String line;
