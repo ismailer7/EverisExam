@@ -13,7 +13,9 @@ public class Loader {
 	private List<String> englishDic = new ArrayList<String>();
 	
 	public Loader() {
-		try (BufferedReader br = Files.newBufferedReader(Paths.get(getClass().getClassLoader().getResource("english.txt").toURI()))) {
+		BufferedReader br = null;
+		try (
+			br = Files.newBufferedReader(Paths.get(getClass().getClassLoader().getResource("english.txt").toURI()));
 			// read line by line
 			String line;
 			while ((line = br.readLine()) != null) {
@@ -22,6 +24,8 @@ public class Loader {
 
 		} catch (IOException | URISyntaxException e) {
 			System.err.format("IOException: %s%n", e);
+		} finally {
+			br.close();
 		}
 	}
 
