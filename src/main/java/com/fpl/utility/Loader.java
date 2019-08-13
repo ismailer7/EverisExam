@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Loader {
 	
-	private List<String> englishDic = new ArrayList<String>();
+	private List englishDic = new ArrayList();
 	
 	public Loader() {
 		BufferedReader br = null;
@@ -22,7 +22,9 @@ public class Loader {
 				englishDic.add(line);
 			}
 
-		} catch (IOException | URISyntaxException e) {
+		} catch (URISyntaxException e) {
+			System.err.format("IOException: %s%n", e);
+		} catch (IOException e) {
 			System.err.format("IOException: %s%n", e);
 		}
 	}
